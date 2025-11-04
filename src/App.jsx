@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
-import Home from "./pages/Home";
-import Quiz from "./pages/Quiz";
-import Result from "./pages/Result";
+import Home from "./Pages/Home";
+import Quiz from "./Pages/Quiz";
+import Result from "./Pages/Result";
+
 
 function App() {
   const [user, setUser] = useState(""); 
