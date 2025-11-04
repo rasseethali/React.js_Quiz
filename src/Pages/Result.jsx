@@ -56,11 +56,11 @@ const Result = ({ user, score }) => {
             </button>
           </a>
 
-          {/* <a href="/home">
+          <a href="/home">
             <button className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded transition-all duration-300 transform hover:scale-110 hover:shadow-lg">
               🏠 Go to Home
             </button>
-          </a> */}
+          </a>
         </div>
       </div>
     </div>
