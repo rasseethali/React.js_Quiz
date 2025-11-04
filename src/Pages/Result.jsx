@@ -1,30 +1,4 @@
 
-// const Result = ({ user, score }) => {
-//   return (
-//     <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 text-white animate-fade-in">
-      
-//       <div className="bg-white text-gray-800 rounded-2xl shadow-2xl p-8 w-[90%] max-w-md text-center transform transition-all duration-700 hover:scale-105 hover:shadow-3xl">
-        
-//         <h1 className="text-3xl font-bold mb-4 animate-bounce">
-//           Quiz Completed Successfully 🎉
-//         </h1>
-        
-//         <h2 className="text-2xl font-semibold mb-6">
-//           Hello <span className="text-blue-600">{user}</span>, your score is{" "}
-//           <span className="text-green-600 font-bold">{score}</span>.
-//         </h2>
-
-//         <a href="/home">
-//           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded transition-all duration-300 transform hover:scale-110 hover:shadow-lg">
-//             Go to Home
-//           </button>
-//         </a>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Result;
 
 const Result = ({ user, score }) => {
   const totalQuestions = 10;
@@ -82,11 +56,11 @@ const Result = ({ user, score }) => {
             </button>
           </a>
 
-          <a href="/home">
+          {/* <a href="/home">
             <button className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded transition-all duration-300 transform hover:scale-110 hover:shadow-lg">
               🏠 Go to Home
             </button>
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
