@@ -37,32 +37,17 @@ const Result = ({ user, score }) => {
           You got <span className="font-semibold text-blue-600">{percentage.toFixed(0)}%</span> correct answers.
         </p>
 
-        {/* Progress bar */}
-        <div className="w-full bg-gray-300 rounded-full h-4 mb-4">
+        <div className="w-full bg-gray-300 rounded-full h-4 mb-4 overflow-hidden">
           <div
-            className="bg-green-500 h-4 rounded-full transition-all duration-700"
-            style={{ width: `${percentage}%` }}
+            className="bg-green-500 h-full transition-all duration-700"
+            style={{ width: `${Math.min(percentage, 100)}%` }}
           ></div>
         </div>
+
 
         {/* Feedback message */}
         <p className="text-xl font-medium mb-6 text-gray-800">{feedback}</p>
 
-        {/* Buttons */}
-        {/* <div className="flex flex-col gap-4">
-          <a href="/quiz">
-            <button className="w-full bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded transition-all duration-300 transform hover:scale-110 hover:shadow-lg">
-              🔁 Play Again
-            </button>
-          </a>
-
-          <a href="/home">
-            <button className="w-full bg-blue-500 hover:bg-blue-700
-             text-white font-bold py-2 px-6 rounded transition-all duration-300 transform hover:scale-110 hover:shadow-lg">
-              🏠 Go to Home
-            </button>
-          </a>
-        </div> */}
       </div>
     </div>
   );
