@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth Fade-in Animation */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 1s ease-out;
+}
+
+/* Animated Gradient Background */
+@keyframes gradient-move {
+  0% { background-position: 0% 50%; }
+   30% { background-position: 100% 50%; }
+      50% { background-position: 20% 90%; }
+    70% { background-position: 120% 90%; }
+  100% { background-position: 56% 32%; }
+
+ 
+}
+
+.bg-gradient-animate {
+background: linear-gradient(-45deg, #007CF0, #00DFD8, #7928CA, #FF0080 ,#00b09b, #96c93d, #007cf0);
+
+
+
+  background-size: 400% 400%;
+  animation: gradient-move 8s ease infinite;
+}
+
+/* quiz */
+
+.quiz-bg {
+ background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1e3c72);
+
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  30% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 20% 90%;
+  }
+  70% {
+    background-position: 120% 90%;
+  }
+  100% {
+    background-position: 56% 32%;
+  }
+}
+
