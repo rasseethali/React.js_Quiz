@@ -48,13 +48,7 @@ const Result = ({ user, score }) => {
         {/* Feedback message */}
         <p className="text-xl font-medium mb-6 text-gray-800">{feedback}</p>
 
-          {/* Play Again button */}
-        <button
-          onClick={onRestart}
-          className="mt-4 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full shadow-md transition-transform transform hover:scale-105"
-        >
-          🔁 Play Again
-        </button>
+         
 
       </div>
     </div>
